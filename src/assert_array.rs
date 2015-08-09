@@ -9,13 +9,13 @@ pub fn run() {
 // arr[4]
 fn index() -> bool {
   let arr: [i32; 5] = [1, 2, 3, 4, 5];
-  __ == 1
+  arr[0] == 1
 }
 
 // A new fixed size array can be created by declaring
 // the type of its elements along with its length
 // [i32; 0] = []
 fn empty() -> bool {
-  let arr: __;
+  let arr: [i32; 0] = [];
   arr.len() == 0
 }

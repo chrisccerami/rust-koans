@@ -10,21 +10,21 @@ pub fn run() {
 // Booleans can have two values, true or false.
 // Two equal values will return true when compared with the == operator
 fn truth() -> bool {
-  true == __
+  true == true
 }
 
 // Likewise, two unequal values will return false when compared with ==
 fn falsehood() -> bool {
-  !(false == __)
+  !(false == true)
 }
 
 // Strings can also be compared and will return a boolean
 fn string_equality() -> bool {
-  "Stuff" == __
+  "Stuff" == "Stuff"
 }
 
 // Integers can be compared as long as they are of the same type
 fn int_equality() -> bool {
   let num:i8 = 5;
-  num == __
+  num == 5
 }
