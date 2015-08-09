@@ -1,5 +1,6 @@
 mod assert_bool;
 mod assert_array;
+mod check;
 
 fn main() {
   assert_bool::run();
