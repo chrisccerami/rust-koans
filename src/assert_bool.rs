@@ -4,6 +4,7 @@ pub fn run() {
   check::check(truth());
   check::check(falsehood());
   check::check(string_equality());
+  check::check(int_equality());
 }
 
 // Booleans can have two values, true or false.
@@ -20,4 +21,10 @@ fn falsehood() -> bool {
 // Strings can also be compared and will return a boolean
 fn string_equality() -> bool {
   "Stuff" == __
+}
+
+// Integers can be compared as long as they are of the same type
+fn int_equality() -> bool {
+  let num:i8 = 5;
+  num == __
 }
