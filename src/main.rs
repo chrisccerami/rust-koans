@@ -1,13 +1,8 @@
 mod assert_bool;
-
-#[test]
-fn it_works() {
-}
+mod assert_array;
 
 fn main() {
-  if assert_bool::truthiness() == true {
-    println!("The truth is true")
-  } else {
-    println!("The truth is somehow false")
-  }
+  assert_bool::run();
+  assert_array::run();
+  println!("All Koans passing!");
 }

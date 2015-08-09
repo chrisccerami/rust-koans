@@ -1,7 +1,6 @@
-pub fn truthiness() -> bool {
+pub fn run() {
   assert!(truth(), "Truth should be true");
-  assert!(truth(), "Falsehood should be false");
-  true
+  assert!(falsehood(), "Falsehood should be false");
 }
 
 fn truth() -> bool {
@@ -9,5 +8,5 @@ fn truth() -> bool {
 }
 
 fn falsehood() -> bool {
-  false == true
+  !(false == true)
 }
